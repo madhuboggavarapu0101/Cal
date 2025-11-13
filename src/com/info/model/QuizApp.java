@@ -47,7 +47,7 @@ public class QuizApp {
                 }
             }
 
-            System.out.println("\n===== RESULT =====");
+            System.out.println("\n RESULT ");
             System.out.println("Score: " + score + " / " + questions.length);
 
             sc.close();
