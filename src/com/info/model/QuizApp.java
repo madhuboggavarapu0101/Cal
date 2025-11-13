@@ -3,7 +3,7 @@ package com.info.model;
 import java.util.Scanner;
 
 public class QuizApp {
-        static void main(String[] args) {
+       public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
 
             String[] questions = {
@@ -25,7 +25,7 @@ public class QuizApp {
             int score = 0;
 
             System.out.println(" SIMPLE QUIZ ");
-            System.out.println("--------------------");
+            System.out.print("--------------------");
 
             for (int i = 0; i < questions.length; i++) {
                 System.out.println("\n" + questions[i]);
@@ -39,9 +39,11 @@ public class QuizApp {
 
                 if (choice == answers[i]) {
                     System.out.println(" Correct!");
+                    System.out.print("-------------------");
                     score++;
                 } else {
                     System.out.println(" Wrong.");
+                    System.out.print("-------------------");
                 }
             }
 
